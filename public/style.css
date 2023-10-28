@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "Sharp Grotesk Medium 25 Regular";
+    font-style: italic;
+    src: url("https://db.onlinewebfonts.com/t/5a5c2865c8fa7a166d94d0880ca9eebc.eot");
+    src: url("https://db.onlinewebfonts.com/t/5a5c2865c8fa7a166d94d0880ca9eebc.eot?#iefix") format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/5a5c2865c8fa7a166d94d0880ca9eebc.woff2") format("woff2"),
+    url("https://db.onlinewebfonts.com/t/5a5c2865c8fa7a166d94d0880ca9eebc.woff") format("woff"),
+    url("https://db.onlinewebfonts.com/t/5a5c2865c8fa7a166d94d0880ca9eebc.ttf") format("truetype"),
+    url("https://db.onlinewebfonts.com/t/5a5c2865c8fa7a166d94d0880ca9eebc.svg#Sharp Grotesk Medium 25 Regular") format("svg");
+}
+
+body {
+    background-color: #CC0000;
+    color: #FFBC0D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background-size: 100% 100%; 
+    background-repeat: fit; 
+}
+
+
+#logo {
+    max-width: 90%;
+    position: fixed;
+    top: 0;
+}
+
+#api-data {
+    font-family: "Sharp Grotesk Medium 25 Regular", sans-serif;
+    font-style: italic;
+    font-size: 72px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    animation: pop-up 2s ease forwards;
+}
+
+@keyframes pop-up {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#survey {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #FFBC0D;
+    padding: 20px;
+    background-color: #CC0000;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#deal {
+    font-family: "Sharp Grotesk Medium 25 Regular", sans-serif;
+    font-style: italic;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFBC0D;
+    text-decoration: underline;
+}
