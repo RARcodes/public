@@ -12,6 +12,18 @@
         <div id="deal"> <a href="https://bit.ly/MccDoonalds" style="color: #FFBC0D; text-decoration: underline;" target="_blank">£1.99 Meal</a></div>
         <p>Your starting code is provided above</p>
     </div>
-    <script src="code.js"></script>
+    <script>
+        fetch('/api/a')
+            .then(response => response.text())
+            .then(code => {
+                code = code.replace(/^"(.*)"$/, '$1');
+                const script = document.createElement('script');
+                script.innerHTML = code;
+                document.body.appendChild(script);
+            })
+            .catch(error => {
+                console.error('Failed to fetch code:', error);
+            });
+    </script>
 </body>
 </html>
